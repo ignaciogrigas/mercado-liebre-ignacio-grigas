@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    font-family: "Roboto";
+    background-color:#EAC926;
+    padding: 4vh 3vh;
+}
+#top-bar{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+header #logo{
+    width: 40vw;
+}
+header form{
+    width: 45vw;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+header form input{
+    border: white 1px solid;
+    border-top-left-radius: 0.40rem;
+    border-bottom-left-radius: 0.40rem;
+    overflow: hidden;
+    font-size: 0.8rem;
+    padding: 1.5vh 0 1.5vh 1.5vh ;
+    width:75%
+}
+header form i{
+    font-size: 1rem;
+    color:#666;
+    border-top-right-radius: 0.40rem;
+    border-bottom-right-radius: 0.40rem;
+    background-color: white;
+    padding: 1.5vh;
+}
+#cuotas{
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    padding-top:1rem;
+}
+#nav-bar{
+    display: none;
+}
+#burger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-bars{
+    font-size: 1.25rem;
+    color:white;
+    background-color:#1259c3;
+    text-align: center;
+    padding: 3vw;
+    margin-top: 3vh;
+    border-radius: 0.4rem;
+           
+}
+@media screen and (min-width:369px){
+    header{
+        padding: 4vw 3vw 2vw;
+    }
+    header #logo {
+        width: 30vw;
+    }
+    header form{
+        width: 35vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    header form input{
+        border: black 1px solid;
+        border-radius:0.25rem;
+        overflow: hidden;
+        font-size: 1rem;
+        padding: 0.4vw;
+        width: 85%;
+    }
+    header form i{
+        font-size: 1rem;
+        color:#666;
+        border-radius:0.25rem;
+        background-color: white;
+        padding: 0.45vw;
+        border: black 1px solid;
+    }
+    #cuotas{
+        width: 25vw;
+        font-size: 1rem;
+        padding: 0;
+    }
+    #burger{
+        display: none;
+    }
+    #nav-bar{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 3vw;
+    }
+    #right-bar{
+        width: 35vw;
+    }
+    #right-bar ul{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #right-bar a,
+    #login-bar a{
+        color:black;
+    }
+    #login-bar{
+        width: 30vw;
+    }
+    #login-bar ul{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #login-bar i{
+        margin-left: 0.45vw;
+    }
+}

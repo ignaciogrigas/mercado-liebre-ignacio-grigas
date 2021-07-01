@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+main{
+    background-color:#ebebeb;
+    padding-bottom: 3rem;
+    font-family: "Roboto";
+}
+#banner{
+    width: 100%;
+}
+main p{
+    font-size:0.75rem;
+}
+main .generales{
+    text-align: center;
+    margin: auto;
+    width: 90vw;
+}
+main img{
+    width: 100%;
+}
+main section .contenedor{
+    background-color: white;
+    margin:0.625rem;
+}
+main article .contenido{
+    position:relative;
+    border-top:#ebebeb 0.0625rem solid;
+    text-align: left;
+    padding:0.9375rem;
+}
+main h3{
+    text-align:left;
+    font-size:1.5rem;
+    color:#666;
+    font-weight: bold;
+    padding:0.9375rem;
+}
+main  section .imp-info{
+    display:flex;
+    align-items: baseline;
+
+}
+.imp-info .precio{
+    width: 30%;
+    font-size:1.125rem;
+}
+.imp-info .descuento{
+    width: 70%;
+    text-align: center;
+    color:#39b54a;
+    font-size: 0.85rem;
+}
+main h5.descrip{
+    display:none;
+    color:#666;
+    font-size: 1rem;
+    padding-top:3rem;
+}
+ main section article i{
+    color:#39b54a;
+    font-size: 1rem;
+    width: 2.5rem;
+    height:2.5rem;
+    border:#39b54a 0.0625rem solid;
+    border-radius:1.25rem;
+    display: block;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    border-radius: 50%;
+    position:absolute;
+    right: 20px;
+    top: -15px;
+}
+
+@media screen and (min-width: 361px){
+    main section.contenedor:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section article section:hover h5.descrip{
+        display:block
+    }
+    main article.productos{
+        display:flex;
+        flex-flow:row wrap;
+        justify-content: space-between;
+    }
+    main section article section{
+        width: 40vw;
+    }
+}
+@media screen and (min-width:769px){
+    main section article section{
+        width: 20vw;
+    }
+}

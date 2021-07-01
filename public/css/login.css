@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    font-family: "Roboto";
+    background-color:#ebebeb;
+    padding-bottom: 3rem;
+}
+main form{
+    padding : 5vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+main input{
+    width: 100%;
+    border: white 1rem solid;
+    border-radius: 0.5rem;
+    margin-bottom: 3vh;
+}
+button{
+    border:none;
+    font-size: 1.1rem;
+    color:white;
+    background-color:#1259c3;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    width: 100%;
+}
+button:hover{
+    background-color:#0022AA;
+    transition: all 0.5s;
+}
